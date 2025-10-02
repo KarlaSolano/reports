@@ -28,11 +28,13 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
+                    <!-- Left Side Of Navbar -->                    
                     <ul class="navbar-nav me-auto">
-                        <li>
-                            <a href="/expenses">Expense Reports</a>
-                        </li>
+                        @auth
+                            <li>
+                                <a href="/expenses">Expense Reports</a>
+                            </li>
+                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
